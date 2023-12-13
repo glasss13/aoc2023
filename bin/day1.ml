@@ -23,5 +23,5 @@ let read_lines file_name =
 
 let () =
   let vals = List.map calc_line_num (read_lines file) in
-  let result = List.fold_left (fun acc v -> acc + v) 0 vals in
+  let result = List.fold_left ( + ) 0 vals in
   Printf.printf "answer is: %i\n" result
